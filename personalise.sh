@@ -34,6 +34,9 @@ defaults write com.apple.Dock persistent-apps -array
 
 echo "Adjusting Terminal settings ..."
 defaults write com.apple.Terminal NSWindowTabbingShoudShowTabBarKey-TTWindow-TTWindowController-TTWindowController-VT-FS 1
+open prefs/MyTerm.terminal
+defaults write com.apple.terminal "Default Window Settings" -string "MyTerm"
+defaults write com.apple.Terminal "Startup Window Settings" -string "MyTerm"
 
 echo "Preparing other scripts in this repo ..."
 chmod a+x disablesudopasswd.py
