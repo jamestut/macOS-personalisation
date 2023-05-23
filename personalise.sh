@@ -32,6 +32,10 @@ defaults write com.apple.Dock mru-spaces -bool false
 defaults write com.apple.Dock autohide-delay -float 0
 defaults write com.apple.Dock persistent-apps -array
 
+echo "Adjusting menubar settings ..."
+defaults write com.apple.controlcenter "NSStatusItem Visible Battery" -bool true
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true
+
 echo "Adjusting Terminal settings ..."
 defaults write com.apple.Terminal NSWindowTabbingShoudShowTabBarKey-TTWindow-TTWindowController-TTWindowController-VT-FS 1
 open prefs/MyTerm.terminal
