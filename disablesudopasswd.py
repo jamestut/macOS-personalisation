@@ -25,8 +25,10 @@ def edit_file(fn):
 			f.writelines(lines)
 
 def run_visudo():
-	env = {k: __file__ for k in ["EDITOR", "VISUAL"]}
+	env = {}
 	env.update(os.environ)
+	for k in ["EDITOR", "VISUAL"]:
+		env[k] = __file__
 	subprocess.run(["sudo", "visudo"], env=env, check=True)
 
 def main():
