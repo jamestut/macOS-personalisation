@@ -1,5 +1,6 @@
 #!/usr/bin/env zsh
 # env
+cd "${0:a:h}"
 PREF_DIR=~/Library/Preferences
 
 echo "Adjusting trackpad settings ..."
@@ -30,7 +31,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 echo "Adjusting Dock and Mission Control settings ..."
 defaults write com.apple.Dock mru-spaces -bool false
 defaults write com.apple.Dock autohide-delay -float 0
-defaults write com.apple.Dock persistent-apps -array
+
+echo "Adjusting window manager settings ..."
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 
 echo "Adjusting menubar settings ..."
 defaults write com.apple.controlcenter "NSStatusItem Visible Battery" -bool true
