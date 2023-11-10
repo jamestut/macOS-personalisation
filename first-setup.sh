@@ -17,4 +17,4 @@ echo "Cleaning dock items (current user) ..."
 ./reset-dock.sh
 
 echo "Customising system preferences ..."
-./system-wide-personalise.sh
+sudo ./system-wide-personalise.sh
