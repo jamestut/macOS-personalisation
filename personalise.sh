@@ -7,6 +7,7 @@ echo "Adjusting trackpad settings ..."
 defaults write -g com.apple.trackpad.scaling -int 2
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -int 0
 
 echo "Adjusting keyboard settings ..."
 defaults write -g InitialKeyRepeat -int 15
@@ -31,6 +32,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 echo "Adjusting Dock and Mission Control settings ..."
 defaults write com.apple.Dock mru-spaces -bool false
 defaults write com.apple.Dock autohide-delay -float 0
+defaults write com.apple.dock mineffect -string scale
 
 echo "Adjusting window manager settings ..."
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
