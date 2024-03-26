@@ -10,6 +10,12 @@ then
     exit 1
 fi
 
+if xattr . | fgrep com.apple.quarantine
+then
+    echo "Dequarantining repo ..."
+    xattr -r -d com.apple.quarantine .
+fi
+
 echo "Customising user preferences ..."
 ./personalise.sh
 
