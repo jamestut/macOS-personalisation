@@ -3,6 +3,12 @@
 cd "${0:a:h}"
 PREF_DIR=~/Library/Preferences
 
+if [[ `id -u` -eq 0 ]]
+then
+    echo "Do not run this script as root!"
+    exit 1
+fi
+
 echo "Adjusting trackpad settings ..."
 defaults write -g com.apple.trackpad.scaling -int 2
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
@@ -46,6 +52,9 @@ defaults write com.apple.Terminal NSWindowTabbingShoudShowTabBarKey-TTWindow-TTW
 open prefs/MyTerm.terminal
 defaults write com.apple.terminal "Default Window Settings" -string "MyTerm"
 defaults write com.apple.Terminal "Startup Window Settings" -string "MyTerm"
+
+echo "Adjusting font smoothing settings ..."
+defaults -currentHost write -g AppleFontSmoothing -int 0
 
 echo "Preparing other scripts in this repo ..."
 chmod a+x disablesudopasswd.py

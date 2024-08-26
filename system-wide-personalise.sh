@@ -15,3 +15,6 @@ defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist AutomaticDown
 defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist AutomaticallyInstallMacOSUpdates -bool false
 defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist ConfigDataInstall -bool false
 defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist CriticalUpdateInstall -bool false
+
+echo "Disabling font smoothing ..."
+sudo defaults -currentHost write -g AppleFontSmoothing -int 0
