@@ -15,6 +15,10 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool t
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -int 0
 
+echo "Adjusting mouse settings ..."
+defaults write -g com.apple.mouse.scaling 3
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
+
 echo "Adjusting keyboard settings ..."
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 2
