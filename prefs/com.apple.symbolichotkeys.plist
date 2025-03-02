@@ -264,7 +264,7 @@
 		<key>60</key>
 		<dict>
 			<key>enabled</key>
-			<string>0</string>
+			<false/>
 			<key>value</key>
 			<dict>
 				<key>parameters</key>
@@ -280,7 +280,7 @@
 		<key>61</key>
 		<dict>
 			<key>enabled</key>
-			<string>0</string>
+			<false/>
 			<key>value</key>
 			<dict>
 				<key>parameters</key>
