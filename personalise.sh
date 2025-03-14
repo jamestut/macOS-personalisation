@@ -63,15 +63,17 @@ defaults -currentHost write -g AppleFontSmoothing -int 0
 echo "Preparing other scripts in this repo ..."
 chmod a+x disablesudopasswd.py
 
-echo "Setting up keyboard shortcuts ..."
-PREF_FILE=com.apple.symbolichotkeys.plist
-rm -f $PREF_DIR/$PREF_FILE
-if defaults read $PREF_FILE
-then
-    echo "Keyboard shortcut reset failed!"
-    exit 1
-fi
-cp prefs/$PREF_FILE $PREF_DIR/$PREF_FILE
-defaults read $PREF_FILE &> /dev/null
+echo "Setting up preferences ..."
+for PREF_FILE in com.apple.symbolichotkeys.plist com.lwouis.alt-tab-macos.plist
+do
+    rm -f $PREF_DIR/$PREF_FILE
+    if defaults read $PREF_FILE
+    then
+        echo "Preference reset failed!"
+        exit 1
+    fi
+    cp prefs/$PREF_FILE $PREF_DIR/$PREF_FILE
+    defaults read $PREF_FILE &> /dev/null
+done
 
 echo "Done! Please logoff now!"

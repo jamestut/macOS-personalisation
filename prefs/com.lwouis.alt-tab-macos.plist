@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SUHasLaunchedBefore</key>
+	<true/>
+	<key>SULastCheckTime</key>
+	<date>2025-03-04T23:54:28Z</date>
+	<key>alignThumbnails</key>
+	<string>1</string>
+	<key>appearanceStyle</key>
+	<string>1</string>
+	<key>appearanceVisibility</key>
+	<string>0</string>
+	<key>appsToShow</key>
+	<string>0</string>
+	<key>hideAppBadges</key>
+	<string>false</string>
+	<key>hideWindowlessApps</key>
+	<string>true</string>
+	<key>preferencesVersion</key>
+	<string>7.21.1</string>
+	<key>previewFocusedWindow</key>
+	<string>false</string>
+	<key>screenRecordingPermissionSkipped</key>
+	<string>true</string>
+	<key>screensToShow</key>
+	<string>1</string>
+	<key>showAppsOrWindows</key>
+	<string>1</string>
+	<key>showFullscreenWindows</key>
+	<string>1</string>
+	<key>showFullscreenWindows2</key>
+	<string>1</string>
+	<key>showHiddenWindows</key>
+	<string>1</string>
+	<key>showHiddenWindows2</key>
+	<string>1</string>
+	<key>showMinimizedWindows</key>
+	<string>1</string>
+	<key>showMinimizedWindows2</key>
+	<string>1</string>
+	<key>spacesToShow</key>
+	<string>1</string>
+	<key>spacesToShow2</key>
+	<string>1</string>
+	<key>updatePolicy</key>
+	<string>1</string>
+</dict>
+</plist>
