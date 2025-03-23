@@ -4,12 +4,10 @@
 <dict>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
-	<key>SULastCheckTime</key>
-	<date>2025-03-04T23:54:28Z</date>
 	<key>alignThumbnails</key>
 	<string>1</string>
 	<key>appearanceStyle</key>
-	<string>1</string>
+	<string>2</string>
 	<key>appearanceVisibility</key>
 	<string>0</string>
 	<key>appsToShow</key>
