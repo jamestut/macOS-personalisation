@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>SUAutomaticallyUpdate</key>
+	<false/>
+	<key>SUEnableAutomaticChecks</key>
+	<false/>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>alignThumbnails</key>
@@ -29,7 +33,7 @@
 	<key>showFullscreenWindows</key>
 	<string>1</string>
 	<key>showFullscreenWindows2</key>
-	<string>1</string>
+	<string>0</string>
 	<key>showHiddenWindows</key>
 	<string>1</string>
 	<key>showHiddenWindows2</key>
@@ -41,8 +45,8 @@
 	<key>spacesToShow</key>
 	<string>1</string>
 	<key>spacesToShow2</key>
-	<string>1</string>
+	<string>0</string>
 	<key>updatePolicy</key>
-	<string>1</string>
+	<string>0</string>
 </dict>
 </plist>
