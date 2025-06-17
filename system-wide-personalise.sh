@@ -18,3 +18,6 @@ defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist CriticalUpdat
 
 echo "Disabling font smoothing ..."
 sudo defaults -currentHost write -g AppleFontSmoothing -int 0
+
+echo "Setting root shell to zsh ..."
+chsh -s /bin/zsh root
