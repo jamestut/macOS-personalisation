@@ -44,6 +44,11 @@ defaults write com.apple.Dock mru-spaces -bool false
 defaults write com.apple.Dock autohide-delay -float 0
 defaults write com.apple.dock mineffect -string scale
 
+echo "Adjusting date time menubar settings ..."
+defaults write com.apple.menuextra.clock ShowDate 2
+defaults write com.apple.menuextra.clock ShowDayOfWeek 0
+defaults write "Apple Global Domain" AppleICUForce24HourTime 1
+
 echo "Adjusting window manager settings ..."
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 
