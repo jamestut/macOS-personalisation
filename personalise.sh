@@ -44,7 +44,6 @@ defaults write com.apple.Dock mru-spaces -bool false
 defaults write com.apple.Dock autohide-delay -float 0
 defaults write com.apple.dock mineffect -string scale
 defaults write com.apple.dock enterMissionControlByTopWindowDrag -bool false
-defaults write com.apple.doc showLaunchpadGestureEnabled -int 0
 
 echo "Adjusting date time menubar settings ..."
 defaults write com.apple.menuextra.clock ShowDate 2
