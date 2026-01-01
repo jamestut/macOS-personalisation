@@ -53,6 +53,10 @@ defaults write "Apple Global Domain" AppleICUForce24HourTime 1
 echo "Adjusting window manager settings ..."
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 
+echo "Disabling animations ..."
+defaults write -g NSWindowResizeTime -float 0.001
+defaults write -g NSScrollAnimationEnabled -bool false
+
 echo "Adjusting menubar settings ..."
 defaults write com.apple.controlcenter "NSStatusItem Visible Battery" -bool true
 defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true
