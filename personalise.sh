@@ -39,11 +39,13 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.finder FXPreferredViewStyle Nlsv
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-echo "Adjusting Dock and Mission Control settings ..."
+echo "Adjusting Dock, Spaces, and Mission Control settings ..."
 defaults write com.apple.Dock mru-spaces -bool false
 defaults write com.apple.Dock autohide-delay -float 0
 defaults write com.apple.dock mineffect -string scale
 defaults write com.apple.dock enterMissionControlByTopWindowDrag -bool false
+defaults write -g AppleWindowTabbingMode -string always
+defaults write -g AppleSpacesSwitchOnActivate -bool false
 
 echo "Adjusting date time menubar settings ..."
 defaults write com.apple.menuextra.clock ShowDate 2
