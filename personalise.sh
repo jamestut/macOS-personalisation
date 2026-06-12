@@ -59,6 +59,10 @@ echo "Disabling animations ..."
 defaults write -g NSWindowResizeTime -float 0.001
 defaults write -g NSScrollAnimationEnabled -bool false
 
+echo "Disabling persistence ..."
+defaults write -g NSQuitAlwaysKeepsWindows -bool false
+defaults write -g ApplePersistence -bool no
+
 echo "Adjusting menubar settings ..."
 defaults write com.apple.controlcenter "NSStatusItem Visible Battery" -bool true
 defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true
