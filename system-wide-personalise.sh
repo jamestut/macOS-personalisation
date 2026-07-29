@@ -7,6 +7,7 @@ fi
 
 echo "Disabling search indexer ..."
 mdutil -a -i off
+touch /System/Volumes/Data/.metadata_never_index
 
 echo "Disabling automatic updates ..."
 defaults write /Library/Preferences/com.apple.commerce.plist AutoUpdate -bool false
