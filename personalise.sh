@@ -11,6 +11,7 @@ fi
 
 echo "Adjusting trackpad settings ..."
 defaults write -g com.apple.trackpad.scaling -int 3
+defaults write -g AppleEnableSwipeNavigateWithScrolls -bool false
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -int 0
