@@ -22,3 +22,12 @@ sudo defaults -currentHost write -g AppleFontSmoothing -int 0
 
 echo "Setting root shell to zsh ..."
 chsh -s /bin/zsh root
+
+echo "Installing key remapping LaunchDaemon ..."
+SCRIPT_DIR="${0:A:h}"
+PLIST_SRC="$SCRIPT_DIR/payloads/com.local.KeyRemapping.plist"
+PLIST_DST="/Library/LaunchDaemons/com.local.KeyRemapping.plist"
+cp "$PLIST_SRC" "$PLIST_DST"
+chown root:wheel "$PLIST_DST"
+chmod 644 "$PLIST_DST"
+launchctl load -w "$PLIST_DST"
