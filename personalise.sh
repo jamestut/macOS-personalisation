@@ -43,6 +43,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 echo "Adjusting Dock, Spaces, and Mission Control settings ..."
 defaults write com.apple.Dock mru-spaces -bool false
 defaults write com.apple.Dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0
 defaults write com.apple.dock mineffect -string scale
 defaults write com.apple.dock enterMissionControlByTopWindowDrag -bool false
 defaults write -g AppleWindowTabbingMode -string always
