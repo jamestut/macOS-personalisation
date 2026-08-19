@@ -82,16 +82,9 @@ echo "Preparing other scripts in this repo ..."
 chmod a+x disablesudopasswd.py
 
 echo "Setting up preferences ..."
-for PREF_FILE in com.apple.symbolichotkeys.plist com.lwouis.alt-tab-macos.plist
+for PREF_FILE in com.apple.symbolichotkeys.plist com.interversehq.InstantSpaceSwitcher.plist
 do
-    rm -f $PREF_DIR/$PREF_FILE
-    if defaults read $PREF_FILE
-    then
-        echo "Preference reset failed!"
-        exit 1
-    fi
-    cp prefs/$PREF_FILE $PREF_DIR/$PREF_FILE
-    defaults read $PREF_FILE &> /dev/null
+    defaults import ${PREF_FILE%.plist} prefs/$PREF_FILE
 done
 
 echo "Done! Please logoff now!"
