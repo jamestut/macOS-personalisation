@@ -69,12 +69,6 @@ echo "Adjusting menubar settings ..."
 defaults write com.apple.controlcenter "NSStatusItem Visible Battery" -bool true
 defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true
 
-echo "Adjusting Terminal settings ..."
-defaults write com.apple.Terminal NSWindowTabbingShoudShowTabBarKey-TTWindow-TTWindowController-TTWindowController-VT-FS 1
-open prefs/MyTerm.terminal
-defaults write com.apple.terminal "Default Window Settings" -string "MyTerm"
-defaults write com.apple.Terminal "Startup Window Settings" -string "MyTerm"
-
 echo "Adjusting font smoothing settings ..."
 defaults -currentHost write -g AppleFontSmoothing -int 0
 
@@ -82,9 +76,11 @@ echo "Preparing other scripts in this repo ..."
 chmod a+x disablesudopasswd.py
 
 echo "Setting up preferences ..."
-for PREF_FILE in com.apple.symbolichotkeys.plist com.interversehq.InstantSpaceSwitcher.plist
+for PREF_FILE in com.apple.symbolichotkeys.plist com.interversehq.InstantSpaceSwitcher.plist com.apple.Terminal.plist
 do
-    defaults import ${PREF_FILE%.plist} prefs/$PREF_FILE
+    PREF_NAME=${PREF_FILE%.plist}
+    echo "  importing $PREF_NAME ..."
+    defaults import "$PREF_NAME" "prefs/$PREF_FILE"
 done
 
 echo "Done! Please logoff now!"
