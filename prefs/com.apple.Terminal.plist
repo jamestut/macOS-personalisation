@@ -12,12 +12,18 @@
 	<dict>
 		<key>MyTerm</key>
 		<dict>
+			<key>Font</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGkCwwVFlUkbnVsbNQNDg8QERITFFZOU1NpemVYTlNmRmxh
+			Z3NWTlNOYW1lViRjbGFzcyNAJgAAAAAAABAQgAKAA15TRk1vbm8t
+			UmVndWxhctIXGBkaWiRjbGFzc25hbWVYJGNsYXNzZXNWTlNGb250
+			ohkbWE5TT2JqZWN0CBEaJCkyN0lMUVNYXmdud36FjpCSlKOos7zD
+			xgAAAAAAAAEBAAAAAAAAABwAAAAAAAAAAAAAAAAAAADP
+			</data>
 			<key>FontAntialias</key>
 			<true/>
-			<key>FontWidthSpacing</key>
-			<real>1.004032258064516</real>
-			<key>ProfileCurrentVersion</key>
-			<real>2.0800000000000001</real>
 			<key>ScrollAlternateScreen</key>
 			<false/>
 			<key>ShouldRestoreContent</key>
@@ -40,12 +46,8 @@
 			<false/>
 			<key>UseBoldFonts</key>
 			<true/>
-			<key>columnCount</key>
-			<integer>120</integer>
 			<key>name</key>
 			<string>MyTerm</string>
-			<key>rowCount</key>
-			<integer>30</integer>
 			<key>shellExitAction</key>
 			<integer>0</integer>
 			<key>type</key>
