@@ -72,9 +72,6 @@ defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Batter
 echo "Adjusting font smoothing settings ..."
 defaults -currentHost write -g AppleFontSmoothing -int 0
 
-echo "Preparing other scripts in this repo ..."
-chmod a+x disablesudopasswd.py
-
 echo "Setting up preferences ..."
 for PREF_FILE in com.apple.symbolichotkeys.plist com.interversehq.InstantSpaceSwitcher.plist com.apple.Terminal.plist
 do
