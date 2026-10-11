@@ -6,7 +6,7 @@ then
 fi
 
 echo "Disabling search indexer ..."
-mdutil -a -i off
+mdutil -a -d
 touch /System/Volumes/Data/.metadata_never_index
 
 echo "Disabling automatic updates ..."
